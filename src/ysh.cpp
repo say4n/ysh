@@ -60,6 +60,7 @@ void processArgs(vector<string>* args, string command) {
         }
     }
 
+    interim.push_back('\0');
     args->push_back(interim);
 
     for(auto arg: *args){
